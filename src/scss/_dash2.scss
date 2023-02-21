@@ -1,0 +1,386 @@
+.dash2-body {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 10px;
+}
+
+.dash2-body svg,
+a,
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -user-drag: none;
+}
+
+.dash2-h1 {
+  font-weight: bold;
+}
+
+.dash2-icon {
+  width: 50px;
+}
+
+.dash2-chart-icon {
+  width: 100px;
+}
+
+.h1-dash2 {
+  font-weight: bold;
+}
+
+.dash2-col {
+  border: solid 3px white;
+  padding-top: 5px;
+  border-radius: 10px;
+  transition: border 0.2s ease, background 0.2s ease;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background-color: #e0e0e0;
+  gap: 10px;
+
+  &:hover {
+    background-color: white;
+  }
+}
+
+.dash2-row1-h1 {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(32, 32, 227);
+}
+
+.dash2-row2-h1 {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(32, 32, 227);
+}
+
+.dash2-row1-p {
+  padding: 1rem;
+}
+
+.dash2-col1 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 130px;
+}
+
+.dash2-row2 {
+  margin-left: auto;
+}
+
+.dash2-row3 {
+  margin-left: auto;
+}
+
+.dash2-col2 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 130px;
+  margin-left: 0;
+}
+
+.dash2-col6 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 130px;
+  margin-left: 0;
+}
+
+.dash2-col3 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 130px;
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+.dash2-col4 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 130px;
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+.dash2-col5 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 130px;
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+.dash2-col7 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 130px;
+  margin-top: 30px;
+  margin-left: 0;
+}
+
+.dash2-col8 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 130px;
+  margin-top: 30px;
+  margin-left: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.dash2-col9 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  width: 130px;
+  margin-top: 30px;
+  margin-left: 0;
+}
+
+.dash2-col-row1 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  padding-bottom: 5px;
+  padding-left: 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.dash2-col-row2 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  padding-bottom: 5px;
+  padding-left: 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.row-chart {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.dash2-col-row1>* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.map {
+  position: relative;
+  isolation: isolate;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 2rem;
+  color: white;
+  height: 600px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.map-h1 {
+  font-weight: bold;
+}
+
+.dash2 {
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.dash2-row1-p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 1290px) {
+  .dash2-body {
+    padding-left: 100px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+
+  .dash2-body>.row:not(.dash2) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .col-4.react-draggable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dash2-body>.row:not(.dash2)>* {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .dash2-row2 {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .dash2-row3 {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .map {
+    height: auto;
+  }
+
+}
+
+//body dark
+body.dark {
+  .dash2-row1-h1 {
+    background-color: #252525;
+  }
+
+  .dash2-h1 {
+    color: white;
+  }
+
+  .dash2-row1-p {
+    background-color: #252525;
+    color: white;
+  }
+
+  .dash2-col-row1 {
+    background-color: #252525;
+    color: white;
+  }
+
+  .dash2-col-row2 {
+    background-color: #252525;
+    color: white;
+  }
+
+  .dash2-col1 {
+    background-color: #252525;
+    color: white;
+  }
+
+  .dash2-col5 {
+    background-color: #252525;
+    color: white;
+  }
+
+  .dash2-col6 {
+    background-color: #252525;
+    color: white;
+  }
+
+  .dash2-col2 {
+    background-color: #252525;
+    color: white;
+  }
+
+  .dash2-col3 {
+    background-color: #252525;
+    color: white;
+  }
+
+  .dash2-col4 {
+    background-color: #252525;
+    color: white;
+  }
+
+  .dash2-col7 {
+    background-color: #252525;
+    color: white;
+  }
+
+  .dash2-col8 {
+    background-color: #252525;
+    color: white;
+  }
+
+  .dash2-col9 {
+    background-color: #252525;
+    color: white;
+  }
+
+  .dash2-col {
+    background-color: #252525;
+  }
+
+  .h1-dash2 {
+    color: white;
+  }
+
+  .p-dash2 {
+    color: white;
+  }
+
+  .charts-card {
+    background-color: #252525;
+  }
+
+  .map {
+    .overlay {
+      background-color: rgba($color: #000000, $alpha: 0.7);
+    }
+  }
+}

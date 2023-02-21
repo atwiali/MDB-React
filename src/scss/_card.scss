@@ -1,0 +1,100 @@
+.axios-body {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 10px;
+}
+
+.api-h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-api {
+  width: 18rem;
+  margin-bottom: 1rem;
+
+  & .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.div-api {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.axios-scroll {
+  position: fixed;
+  right: 60px;
+  bottom: 15px;
+  cursor: pointer;
+  font-size: 50px;
+  color: rgb(76, 76, 242);
+}
+
+.btn-axios {
+  width: 100px;
+
+}
+
+.add-axios-btn {
+  width: 100px;
+  margin-left: 33%;
+  margin-top: 30px;
+}
+
+.modal-axios {
+  justify-content: center;
+  padding-top: 200px;
+
+}
+
+.modal-dialog .modal-content {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
+
+h4.modal-title {
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 550px) {
+  .axios-body {
+    padding-right: 0px;
+    padding-left: 85px;
+    width: 100%;
+  }
+
+  .axios-scroll {
+    display: none;
+  }
+}
+
+//body dark
+body.dark {
+  .api-h1 {
+    color: white;
+  }
+
+  .api-title {
+    color: white;
+  }
+
+  .card-api {
+    background-color: #252525;
+  }
+
+  .api-title-add {
+    color: white;
+  }
+
+  .title-api {
+    color: white;
+  }
+}

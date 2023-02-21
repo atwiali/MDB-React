@@ -1,0 +1,219 @@
+body[dir="rtl"] {
+
+  .map {
+    direction: ltr;
+  }
+
+  .login-eye {
+    left: 20px;
+    right: auto;
+  }
+
+  .col-p {
+    right: 20px;
+  }
+
+  .register-eye {
+    left: 20px;
+    right: auto;
+  }
+
+  .drag .task-drag {
+    color: blue !important;
+  }
+
+  .select-lang {
+    left: 20px;
+    right: auto;
+    border: solid 2px #4e73df;
+    color: #4e73df;
+    font-weight: bold;
+    width: auto;
+  }
+.drag-name{
+  margin-right: 10px;
+}
+  .body-register {
+    background-image: linear-gradient(to bottom left, white, #4e73df, #ff4b2b);
+  }
+
+  .body-login {
+    background-image: linear-gradient(to bottom right, white, #4e73df, #ff4b2b);
+  }
+
+  .sidebar {
+    right: 0;
+  }
+
+  .dash-num {
+    margin-left: 10px;
+  }
+
+  .mb-1 {
+    margin-left: 10px;
+  }
+
+  .progress {
+    margin-left: 10px;
+  }
+
+  .drag .task-drag {
+    margin: 0;
+    margin-right: auto;
+    font-size: 39px;
+    color: red;
+  }
+
+  .drop-age {
+    margin-left: 0px !important;
+    margin-right: auto;
+    font-size: 40px;
+    color: red;
+  }
+
+  .chart-h1 {
+    text-align: center;
+  }
+
+  .table-h1 {
+    text-align: center;
+  }
+
+  .dash2-h1 {
+    text-align: center;
+  }
+
+  .axios-scroll {
+    position: fixed;
+    left: 60px;
+    bottom: 15px;
+    cursor: pointer;
+    font-size: 50px;
+    color: rgb(76, 76, 242);
+  }
+
+  .dash-h1 {
+    text-align: center;
+  }
+
+  @media (max-width: 1000px) {
+    .dash-body {
+      padding-right: 100px;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+
+    @media (max-width: 500px) {
+      .double-dash {
+        flex-direction: column;
+        width: auto;
+      }
+    }
+
+    .dash-charts {
+      padding-right: 0px;
+      padding-left: 0px;
+      padding-top: 10px;
+    }
+  }
+
+  &.shift-right {
+    margin-right: auto;
+    padding-right: 70px;
+    margin-left: 0;
+    transition: padding .2s ease, margin .2s ease;
+
+    .dash-body {
+      padding-left: 50px;
+    }
+
+    .charts {
+      padding-left: 50px;
+    }
+
+    .table-wrapper {
+      padding-left: 50px;
+    }
+
+    .dash2-body {
+      padding-left: 50px;
+    }
+
+    .axios-body {
+      padding-left: 50px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .charts {
+      padding-right: 120px;
+      padding-left: 40px;
+      padding-top: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .charts {
+      padding-right: 95px;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .table-wrapper {
+      padding-right: 100px;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+  }
+
+  @media (max-width: 1290px) {
+    .dash2-body {
+      padding-right: 100px;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 880px) {
+    .contact-body {
+      padding-right: 130px;
+      padding-left: 0px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .contact-body {
+      padding-right: 95px;
+      padding-left: 0px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .axios-body {
+      padding-left: 0px;
+      padding-right: 85px;
+      width: 100%;
+    }
+  }
+}
+
+@keyframes shiftBody {
+  0% {
+    width: 100%;
+  }
+
+  50% {
+    width: 95%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+
+body[dir="rtl"].shift-right {
+  animation: shiftBody .2s forwards;
+}

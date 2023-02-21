@@ -1,0 +1,61 @@
+@import "sidebar.scss";
+@import "login.scss";
+@import "table.scss";
+@import "charts.scss";
+@import "register.scss";
+@import "dashboard.scss";
+@import "drag.scss";
+@import "drop.scss";
+@import "dashCharts.scss";
+@import "dash2.scss";
+@import "contact.scss";
+@import "card.scss";
+@import "arabic.scss";
+
+.ali {
+  width: 50%;
+}
+
+body {
+  background-color: #f7f2f2;
+  transition: all 0.2s ease;
+
+  ::selection {
+    background-color: #4e73df;
+  }
+}
+
+// body dark
+body.dark {
+  background-color: #363636;
+
+  .select-lang {
+    background-color: #252525;
+    border: solid 2px white;
+    color: white;
+  }
+}
+
+.select-lang {
+  padding: 0.3rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  border: solid 2px #4e73df;
+  color: #4e73df;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  width: auto;
+}
+.switcher{
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .select-lang {
+    top: 5px;
+  }
+}

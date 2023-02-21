@@ -1,0 +1,72 @@
+.App-header-Drag {
+  font-size: calc(10px + 1.5vmin);
+  width: 96%;
+  margin-left: 16px;
+  ;
+}
+
+.drag {
+  background-color: white;
+  width: 100%;
+  border: solid 3px  #695cfe !important;
+}
+
+.drag .task-drag {
+  margin: 0;
+  margin-left: auto;
+  font-size: 39px;
+  color:  #695cfe;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.characters {
+  list-style: none;
+  padding-left: 0;
+}
+
+.characters li {
+  display: flex;
+  align-items: center;
+  border: solid 2px #d0d0d0;
+  border-radius: .2em;
+  padding: .5em .8em .5em .5em;
+  margin-bottom: 1em;
+}
+
+.characters p {
+  max-width: none;
+  font-weight: bold;
+  margin: 0;
+}
+
+.characters-thumb-drag {
+  overflow: hidden;
+  flex-shrink: 0;
+  width: 3em;
+  height: 3em;
+  margin-right: .5em;
+}
+
+.characters-thumb-drag img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+//body dark 
+body.dark .drag {
+  background-color: #252525;
+}
+
+body.dark .drag-name {
+  color: white;
+}

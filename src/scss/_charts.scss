@@ -1,0 +1,76 @@
+.charts {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 10px;
+}
+
+.chart-h1 {
+  font-weight: bold;
+}
+
+.border-charts {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
+
+.card {
+  box-shadow: none;
+}
+
+.double {
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .charts {
+    padding-left: 120px;
+    padding-right: 40px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .double {
+    flex-direction: column;
+  }
+
+  .border-charts {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .charts {
+    padding-left: 95px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+}
+
+//body dark
+body.dark .chart-h1 {
+  color: #ffffff;
+}
+
+body.dark .highcharts-background {
+  fill: #252525;
+}
+
+body.dark text {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+body.dark .charts-card {
+  fill: #252525;
+  background-color: #252525;
+}
+
+body.dark .border-charts {
+  background-color: #252525;
+}
