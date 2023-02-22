@@ -4,16 +4,11 @@ import TablePage from "./Components/pages/TablePage";
 import ChartsPage from "./Components/pages/ChartsPage";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
-import Feedback from "./Components/Feedback";
 import DashboardPage from "./Components/pages/DashboardPage";
 import Dash2Page from "./Components/pages/Dash2Page";
 import ContactPage from "./Components/pages/ContactPage";
 import CardPage from "./Components/pages/CardPage";
 class CombinedRoutes extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <Suspense fallback={<div>Loading...</div>}>
@@ -46,7 +41,7 @@ class CombinedRoutes extends Component {
             key={`/contact`}
           />
           <Route path={`/card`} exact component={CardPage} key={`/card`} />
-          <Route path={`/Feedback`} exact component={Feedback} key={`/Feedback`} />
+          
         </Switch>
       </Suspense>
     );

@@ -1,10 +1,13 @@
-import Routes from "./CombinedRoutes";
+import { useEffect } from "react";
 import { Router } from "react-router-dom";
-import { useTranslation } from "react-i18next/";
+import Routes from "./CombinedRoutes";
 
 function App() {
-
-	
+	useEffect(() => {
+		window.process = {
+			...window.process,
+		};
+	}, []);
 
 	return (
 		<Router history={require("history").createBrowserHistory()}>

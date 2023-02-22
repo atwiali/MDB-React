@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import { MDBIcon } from "mdbreact";
 import { useTranslation } from "react-i18next";
 import Draggable from "react-draggable";
+
 function Sidebar() {
   const [sideBarClose, setSideBarClose] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
+  const { t, i18n } = useTranslation();
+  document.body.dir = i18n.dir();
 
   function handleSidebarOpen() {
     setSideBarClose(false);
@@ -49,8 +52,7 @@ function Sidebar() {
   function logoutBtn() {
     document.body.classList.remove("shift-right");
   }
-  const { t, i18n } = useTranslation();
-  document.body.dir = i18n.dir();
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     document.body.dir = i18n.dir();
@@ -59,23 +61,24 @@ function Sidebar() {
   function handleLang(e) {
     changeLanguage(e.target.value);
   }
+
   return (
     <div className="sidebar-group">
       <Draggable>
-      <select
-        className="select-lang"
-        onClick={handleLang}
-        name="cars"
-        id="cars"
-      >
-       <option value="" className="switcher">Switche</option>
-        <option value="en">English</option>
-        <option value="fr">French</option>
-        <option value="sp">Spanish</option>
-        <option value="ar" className="arabic">
-          Arabic
-        </option>
-      </select>
+        <select
+          className="select-lang"
+          onClick={handleLang}
+          name="cars"
+          id="cars"
+        >
+          <option value="" className="switcher">Switche</option>
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="sp">Spanish</option>
+          <option value="ar" className="arabic">
+            Arabic
+          </option>
+        </select>
       </Draggable>
 
       <nav
