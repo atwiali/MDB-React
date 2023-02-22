@@ -86,7 +86,7 @@ function Login() {
         name="cars"
         id="cars"
       >
-       <option value="" className="switcher">Switche</option>
+       <option value="" className="switcher">Switch</option>
         <option value="en">English</option>
         <option value="fr">French</option>
         <option value="sp">Spanish</option>
